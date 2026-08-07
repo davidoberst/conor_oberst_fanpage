@@ -6,7 +6,12 @@ body {
   background-attachment: fixed;
   min-height: 100vh;
   backdrop-filter: blur(10px);
+  padding-top: 50px;
   margin-top: 0;
+  box-sizing: border-box;
+  font-family: "Short Stack", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 
@@ -14,6 +19,84 @@ body {
     background-color: #e7e1d0;
     width: 90%;
     margin: 0 auto;
-    height: 150px;
-    padding-top: 50px;
+    height: 80px;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #786953;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;     
+    justify-content: center;
+    padding-bottom: 52px;
+}
+
+.title-banner{
+    font-size: 55px;
+    font-weight: 700;
+    color: #131212;  
+    
+}
+
+
+.menu-navegacion{
+    display: flex;
+    justify-content: center; 
+    gap: 13px;
+    font-size: 20px; 
+    margin-top: -55px;
+}
+
+.menu-navegacion a {
+  text-decoration: none;   /* Quita la línea azul de debajo */
+  color: #313030;             /* Cambia el color del texto */
+  font-weight: 100;
+}
+
+
+.container1{
+  display: flex;
+  align-items: center; /* Alinea verticalmente el disco y el texto al centro */
+  gap: 15px;          /* Espacio entre el disco y el texto */
+  max-width: 1100px;  /* Ancho máximo para que no se extienda demasiado */
+  margin: 50px auto;  /* Centra todo el contenedor en la pantalla */
+  padding: 0 20px;
+}
+
+.disk{
+  width: 350px;
+  margin-top: 50px;
+  margin-left: -100px;
+  animation: girarDisco 4s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes girarDisco {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.parrafo1{
+  color: rgb(26, 25, 25);
+  font-size: 15px;
+}
+
+
+.title2{
+  color: rgb(2, 2, 2);
+  font-size: 18px;
+  margin-left: 5%;
+}
+
+.parrafo2{
+  text-align: center;
+  color: rgb(26, 25, 25);
+  font-size: 15px;
+  margin: 5%;
+  margin-top: 0;
 }
