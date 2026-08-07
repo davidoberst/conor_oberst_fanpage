@@ -48,7 +48,7 @@ body {
 }
 
 .menu-navegacion a {
-  text-decoration: none;   /* Quita la línea azul de debajo */
+    /* Quita la línea azul de debajo */
   color: #313030;             /* Cambia el color del texto */
   font-weight: 100;
 }
@@ -57,9 +57,9 @@ body {
 .container1{
   display: flex;
   align-items: center; /* Alinea verticalmente el disco y el texto al centro */
-  gap: 15px;          /* Espacio entre el disco y el texto */
+  gap: 50px;          /* Espacio entre el disco y el texto */
   max-width: 1100px;  /* Ancho máximo para que no se extienda demasiado */
-  margin: 50px auto;  /* Centra todo el contenedor en la pantalla */
+  margin: 15px auto;  /* Centra todo el contenedor en la pantalla */
   padding: 0 20px;
 }
 
@@ -90,13 +90,21 @@ body {
 .title2{
   color: rgb(2, 2, 2);
   font-size: 18px;
-  margin-left: 5%;
+  margin-left: 1%;
 }
 
 .parrafo2{
+
   text-align: center;
   color: rgb(26, 25, 25);
   font-size: 15px;
   margin: 5%;
   margin-top: 0;
+}
+
+.albumcover{
+  height: 100px;
+  margin: 6px;
+  
+  
 }
