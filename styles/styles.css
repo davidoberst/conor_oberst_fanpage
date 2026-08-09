@@ -17,6 +17,7 @@ body {
 
 .nav-container{
     background-color: #e7e1d0;
+    background-image: linear-gradient(#e7e1d0, #e4d4aa);
     width: 90%;
     margin: 0 auto;
     height: 80px;
