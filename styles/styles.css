@@ -1,18 +1,30 @@
 body {
-  background-image: url('../assets/brighteyeswall.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  min-height: 100vh;
-  backdrop-filter: blur(10px);
+  margin: 0;
   padding-top: 50px;
-  margin-top: 0;
+  min-height: 100vh;
   box-sizing: border-box;
   font-family: "Short Stack", cursive;
   font-weight: 400;
   font-style: normal;
+  position: relative;
 }
+
+/* Capa independiente para la imagen de fondo con blur */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/brighteyeswall.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px); /* El blur va aquí */
+  z-index: -1; /* Lo envía al fondo de toda la página */
+}
+
 
 
 .nav-container{
